@@ -3,7 +3,7 @@ package ooss.step1;
 import ooss.Person;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PersonTest {
 
@@ -12,7 +12,7 @@ public class PersonTest {
 //        Person tom = new Person(1, "Tom", 18);
 //        String introduce = tom.introduce();
 //
-//        assertThat(introduce).isEqualTo("My name is Tom. I am 18 years old.");
+//        assertEquals("My name is Tom. I am 18 years old.", introduce);
 //    }
 //
 //    @Test
@@ -20,7 +20,7 @@ public class PersonTest {
 //        Person jim = new Person(2, "Jim", 19);
 //        String introduce = jim.introduce();
 //
-//        assertThat(introduce).isEqualTo("My name is Jim. I am 19 years old.");
+//        assertEquals("My name is Jim. I am 19 years old.", introduce);
 //    }
 //
 //    @Test
@@ -28,7 +28,7 @@ public class PersonTest {
 //        Person person1 = new Person(1, "Tom", 18);
 //        Person person2 = new Person(1, "Tommy", 18);
 //
-//        assertThat(person1).isEqualTo(person2);
+//        assertEquals(person1, person2);
 //    }
 //
 //    @Test
@@ -36,7 +36,7 @@ public class PersonTest {
 //        Person person1 = new Person(1, "Tom", 18);
 //        Person person2 = new Person(2, "Tom", 18);
 //
-//        assertThat(person1).isNotEqualTo(person2);
+//        assertNotEquals(person1, person2);
 //    }
 
 }

@@ -5,7 +5,7 @@ import ooss.Student;
 import ooss.Teacher;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TeacherTest {
 
@@ -16,7 +16,7 @@ public class TeacherTest {
 //
 //        boolean belongsTo = jerry.belongsTo(klass);
 //
-//        assertThat(belongsTo).isFalse();
+//        assertFalse(belongsTo);
 //    }
 //
 //    @Test
@@ -27,7 +27,7 @@ public class TeacherTest {
 //
 //        boolean belongsTo = jerry.belongsTo(klass);
 //
-//        assertThat(belongsTo).isTrue();
+//        assertTrue(belongsTo);
 //    }
 //
 //    @Test
@@ -41,8 +41,8 @@ public class TeacherTest {
 //        boolean belongsToKlass1 = jerry.belongsTo(klass1);
 //        boolean belongsToKlass2 = jerry.belongsTo(klass2);
 //
-//        assertThat(belongsToKlass1).isTrue();
-//        assertThat(belongsToKlass2).isTrue();
+//        assertTrue(belongsToKlass1);
+//        assertTrue(belongsToKlass2);
 //    }
 //
 //    @Test
@@ -53,7 +53,7 @@ public class TeacherTest {
 //
 //        String introduce = jerry.introduce();
 //
-//        assertThat(introduce).isEqualTo("My name is Jerry. I am 21 years old. I am a teacher. I teach Class 1.");
+//        assertEquals("My name is Jerry. I am 21 years old. I am a teacher. I teach Class 1.", introduce);
 //    }
 //
 //    @Test
@@ -66,7 +66,7 @@ public class TeacherTest {
 //
 //        String introduce = jerry.introduce();
 //
-//        assertThat(introduce).isEqualTo("My name is Jerry. I am 21 years old. I am a teacher. I teach Class 2, 3.");
+//        assertEquals("My name is Jerry. I am 21 years old. I am a teacher. I teach Class 2, 3.", introduce);
 //    }
 //
 //    @Test
@@ -80,7 +80,7 @@ public class TeacherTest {
 //
 //        boolean isTeaching = jerry.isTeaching(tom);
 //
-//        assertThat(isTeaching).isFalse();
+//        assertFalse(isTeaching);
 //    }
 //
 //    @Test
@@ -93,7 +93,7 @@ public class TeacherTest {
 //
 //        boolean isTeaching = jerry.isTeaching(tom);
 //
-//        assertThat(isTeaching).isTrue();
+//        assertTrue(isTeaching);
 //    }
 //
 //    @Test
@@ -108,6 +108,6 @@ public class TeacherTest {
 //
 //        boolean isTeaching = jerry.isTeaching(tom);
 //
-//        assertThat(isTeaching).isTrue();
+//        assertTrue(isTeaching);
 //    }
 }

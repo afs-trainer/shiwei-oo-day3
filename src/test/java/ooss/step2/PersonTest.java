@@ -5,7 +5,7 @@ import ooss.Student;
 import ooss.Teacher;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PersonTest {
 
@@ -14,7 +14,7 @@ public class PersonTest {
 //        Person tom = new Student(1, "Tom", 18);
 //        String introduce = tom.introduce();
 //
-//        assertThat(introduce).isEqualTo("My name is Tom. I am 18 years old. I am a student.");
+//        assertEquals("My name is Tom. I am 18 years old. I am a student.", introduce);
 //    }
 //
 //    @Test
@@ -22,6 +22,6 @@ public class PersonTest {
 //        Person jerry = new Teacher(1, "Jerry", 21);
 //        String introduce = jerry.introduce();
 //
-//        assertThat(introduce).isEqualTo("My name is Jerry. I am 21 years old. I am a teacher.");
+//        assertEquals("My name is Jerry. I am 21 years old. I am a teacher.", introduce);
 //    }
 }

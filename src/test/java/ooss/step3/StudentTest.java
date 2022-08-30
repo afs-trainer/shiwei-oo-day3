@@ -4,7 +4,7 @@ import ooss.Klass;
 import ooss.Student;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class StudentTest {
 
@@ -14,7 +14,8 @@ public class StudentTest {
 //        Klass klass = new Klass(1);
 //
 //        boolean isIn = tom.isIn(klass);
-//        assertThat(isIn).isFalse();
+//
+//        assertFalse(isIn);
 //    }
 //
 //    @Test
@@ -24,7 +25,8 @@ public class StudentTest {
 //        tom.join(klass);
 //
 //        boolean isIn = tom.isIn(klass);
-//        assertThat(isIn).isTrue();
+//
+//        assertTrue(isIn);
 //    }
 //
 //    @Test
@@ -38,8 +40,9 @@ public class StudentTest {
 //        boolean isInKlass1 = tom.isIn(klass1);
 //        boolean isInKlass2 = tom.isIn(klass2);
 //
-//        assertThat(isInKlass1).isFalse();
-//        assertThat(isInKlass2).isTrue();
+//
+//        assertFalse(isInKlass1);
+//        assertTrue(isInKlass2);
 //    }
 //
 //    @Test
@@ -50,6 +53,6 @@ public class StudentTest {
 //
 //        String introduce = tom.introduce();
 //
-//        assertThat(introduce).isEqualTo("My name is Tom. I am 18 years old. I am a student. I am in class 1.");
+//        assertEquals("My name is Tom. I am 18 years old. I am a student. I am in class 1.", introduce);
 //    }
 }

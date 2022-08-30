@@ -9,7 +9,8 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
 
 public class KlassTest {
 
@@ -31,7 +32,7 @@ public class KlassTest {
 //
 //        klass.assignLeader(tom);
 //
-//        assertThat(systemOut()).contains("I am Jerry, teacher of Class 2. I know Tom become Leader.");
+//        assertThat(systemOut(), containsString("I am Jerry, teacher of Class 2. I know Tom become Leader."));
 //    }
 //
 //    @Test
@@ -45,7 +46,7 @@ public class KlassTest {
 //
 //        klass.assignLeader(tom);
 //
-//        assertThat(systemOut()).contains("I am Bob, student of Class 2. I know Tom become Leader.");
+//        assertThat(systemOut(), containsString("I am Bob, student of Class 2. I know Tom become Leader."));
 //    }
 //
 //    private String systemOut() {

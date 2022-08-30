@@ -3,7 +3,8 @@ package ooss.step2;
 import ooss.Student;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class StudentTest {
 
@@ -12,7 +13,7 @@ public class StudentTest {
 //        Student tom = new Student(1, "Tom", 18);
 //        String introduce = tom.introduce();
 //
-//        assertThat(introduce).isEqualTo("My name is Tom. I am 18 years old. I am a student.");
+//        assertEquals("My name is Tom. I am 18 years old. I am a student.", introduce);
 //    }
 //
 //    @Test
@@ -20,7 +21,7 @@ public class StudentTest {
 //        Student jim = new Student(2, "Jim", 19);
 //        String introduce = jim.introduce();
 //
-//        assertThat(introduce).isEqualTo("My name is Jim. I am 19 years old. I am a student.");
+//        assertEquals("My name is Jim. I am 19 years old. I am a student.", introduce);
 //    }
 //
 //    @Test
@@ -28,7 +29,7 @@ public class StudentTest {
 //        Student student1 = new Student(1, "Tom", 18);
 //        Student student2 = new Student(1, "Tommy", 19);
 //
-//        assertThat(student1).isEqualTo(student2);
+//        assertEquals(student1, student2);
 //    }
 //
 //    @Test
@@ -36,6 +37,6 @@ public class StudentTest {
 //        Student student1 = new Student(1, "Tom", 18);
 //        Student student2 = new Student(2, "Tom", 18);
 //
-//        assertThat(student1).isNotEqualTo(student2);
+//        assertNotEquals(student1, student2);
 //    }
 }

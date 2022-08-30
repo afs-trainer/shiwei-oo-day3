@@ -3,7 +3,8 @@ package ooss.step3;
 import ooss.Klass;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class KlassTest {
 
@@ -12,7 +13,7 @@ public class KlassTest {
 //        Klass klass1 = new Klass(1);
 //        Klass klass2 = new Klass(1);
 //
-//        assertThat(klass1).isEqualTo(klass2);
+//        assertEquals(klass1, klass2);
 //    }
 //
 //    @Test
@@ -20,7 +21,7 @@ public class KlassTest {
 //        Klass klass1 = new Klass(1);
 //        Klass klass2 = new Klass(2);
 //
-//        assertThat(klass1).isNotEqualTo(klass2);
+//        assertNotEquals(klass1, klass2);
 //    }
 
 }

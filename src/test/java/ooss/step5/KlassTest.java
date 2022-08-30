@@ -8,7 +8,10 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class KlassTest {
 
@@ -24,7 +27,9 @@ public class KlassTest {
 //        Student tom = new Student(1, "Tom", 21);
 //        Klass klass = new Klass(1);
 //
-//        assertThat(klass.isLeader(tom)).isFalse();
+//        boolean isLeader = klass.isLeader(tom);
+//
+//        assertFalse(isLeader);
 //    }
 //
 //    @Test
@@ -35,7 +40,7 @@ public class KlassTest {
 //
 //        boolean isLeader = klass.isLeader(tom);
 //
-//        assertThat(isLeader).isFalse();
+//        assertFalse(isLeader);
 //    }
 //
 //    @Test
@@ -47,7 +52,7 @@ public class KlassTest {
 //
 //        boolean isLeader = klass.isLeader(tom);
 //
-//        assertThat(isLeader).isTrue();
+//        assertTrue(isLeader);
 //    }
 //
 //    @Test
@@ -57,7 +62,7 @@ public class KlassTest {
 //
 //        klass.assignLeader(tom);
 //
-//        assertThat(systemOut()).contains("It is not one of us.");
+//        assertThat(systemOut(), containsString("It is not one of us."));
 //    }
 //
 //    private String systemOut() {
