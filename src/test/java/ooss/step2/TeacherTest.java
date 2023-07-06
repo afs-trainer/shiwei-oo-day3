@@ -8,14 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class TeacherTest {
 
-//    @Test
-//    public void should_return_message_with_name_and_age_when_introduce_given_teacher() {
-//        Teacher jerry = new Teacher(1, "Jerry", 21);
-//        String introduce = jerry.introduce();
-//
-//        assertEquals("My name is Jerry. I am 21 years old. I am a teacher.", introduce);
-//    }
-//
+    @Test
+    public void should_return_message_with_name_and_age_when_introduce_given_teacher() {
+        Teacher jerry = new Teacher(1, "Jerry", 21);
+        String introduce = jerry.introduce();
+
+        assertEquals("My name is Jerry. I am 21 years old. I am a teacher.", introduce);
+    }
+
 //    @Test
 //    public void should_return_message_with_name_and_age_when_introduce_given_another_teacher() {
 //        Teacher robert = new Teacher(1, "Robert", 20);
