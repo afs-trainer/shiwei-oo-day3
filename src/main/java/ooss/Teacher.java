@@ -1,10 +1,11 @@
 package ooss;
 
-public class Teacher {
+public class Teacher extends Person {
     public Teacher(int id, String name, int age) {
+        super(id, name, age);
     }
 
     public String introduce() {
-        return "My name is Jerry. I am 21 years old. I am a teacher.";
+        return String.format("My name is %s. I am %d years old. I am a teacher.", name, age);
     }
 }
