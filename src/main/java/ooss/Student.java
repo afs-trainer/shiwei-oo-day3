@@ -9,7 +9,16 @@ public class Student extends Person {
 
     public String introduce() {
 
-        String klassInfo = klass == null ? "" : String.format(" I am in class %d.", klass.getName());
+        String klassInfo;
+        if (klass == null) {
+            klassInfo = "";
+        } else {
+            if (klass.getLeader().equals(this)) {
+                klassInfo = String.format(" I am the leader of class %d.", klass.getName());
+            } else {
+                klassInfo = String.format(" I am in class %d.", klass.getName());
+            }
+        }
         return String.format("My name is %s. I am %d years old. I am a student.%s", name, age, klassInfo);
     }
 
