@@ -1,7 +1,9 @@
 package ooss;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Teacher extends Person {
     private List<Klass> klasses = new ArrayList<>();
@@ -11,7 +13,9 @@ public class Teacher extends Person {
     }
 
     public String introduce() {
-        return String.format("My name is %s. I am %d years old. I am a teacher.", name, age);
+        String klassNames = klasses.stream().map(Klass::getName).map(Object::toString).collect(Collectors.joining(","));
+        String klassInfo = klasses.size() > 0 ? String.format(" I teach Class %s.", klassNames) : "";
+        return String.format("My name is %s. I am %d years old. I am a teacher.%s", name, age,klassInfo);
     }
 
     public boolean belongsTo(Klass klass) {
