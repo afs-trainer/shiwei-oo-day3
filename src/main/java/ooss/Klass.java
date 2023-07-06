@@ -1,7 +1,13 @@
 package ooss;
 
 public class Klass {
-    public Klass(int name) {
+    private int name;
 
+    public Klass(int name) {
+        this.name = name;
+    }
+
+    public int getName() {
+        return name;
     }
 }
