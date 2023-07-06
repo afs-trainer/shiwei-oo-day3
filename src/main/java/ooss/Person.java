@@ -4,6 +4,7 @@ public class Person {
     private int id;
     private String name;
     private int age;
+
     public Person(int id, String name, int age) {
 
         this.id = id;
@@ -12,6 +13,12 @@ public class Person {
     }
 
     public String introduce() {
-        return String.format("My name is %s. I am %d years old.",name,age);
+        return String.format("My name is %s. I am %d years old.", name, age);
+    }
+
+    @Override
+    public boolean equals(Object otherPersonObject) {
+        Person other = (Person) otherPersonObject;
+        return this.id == other.id;
     }
 }
