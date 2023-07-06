@@ -13,9 +13,10 @@ public class Teacher extends Person {
     }
 
     public String introduce() {
-        String klassNames = klasses.stream().map(Klass::getName).map(Object::toString).collect(Collectors.joining(","));
+        String klassNames = klasses.stream().map(Klass::getName).map(Object::toString)
+                .collect(Collectors.joining(", "));
         String klassInfo = klasses.size() > 0 ? String.format(" I teach Class %s.", klassNames) : "";
-        return String.format("My name is %s. I am %d years old. I am a teacher.%s", name, age,klassInfo);
+        return String.format("My name is %s. I am %d years old. I am a teacher.%s", name, age, klassInfo);
     }
 
     public boolean belongsTo(Klass klass) {
