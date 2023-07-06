@@ -26,4 +26,8 @@ public class Teacher extends Person {
     public void assignTo(Klass klass) {
         klasses.add(klass);
     }
+
+    public boolean isTeaching(Student tom) {
+        return klasses.contains(tom.getKlass());
+    }
 }
