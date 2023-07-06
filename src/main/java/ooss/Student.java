@@ -14,4 +14,10 @@ public class Student {
     public String introduce() {
         return String.format("My name is %s. I am %d years old. I am a student.", name, age);
     }
+
+    @Override
+    public boolean equals(Object otherStudent) {
+        Student other = (Student) otherStudent;
+        return this.id == other.id;
+    }
 }

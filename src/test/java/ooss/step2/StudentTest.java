@@ -23,20 +23,20 @@ public class StudentTest {
 
         assertEquals("My name is Jim. I am 19 years old. I am a student.", introduce);
     }
-//
-//    @Test
-//    public void should_return_true_when_equals_given_two_students_with_same_id() {
-//        Student student1 = new Student(1, "Tom", 18);
-//        Student student2 = new Student(1, "Tommy", 19);
-//
-//        assertEquals(student1, student2);
-//    }
-//
-//    @Test
-//    public void should_return_false_when_equals_given_two_students_with_different_id() {
-//        Student student1 = new Student(1, "Tom", 18);
-//        Student student2 = new Student(2, "Tom", 18);
-//
-//        assertNotEquals(student1, student2);
-//    }
+
+    @Test
+    public void should_return_true_when_equals_given_two_students_with_same_id() {
+        Student student1 = new Student(1, "Tom", 18);
+        Student student2 = new Student(1, "Tommy", 19);
+
+        assertEquals(student1, student2);
+    }
+
+    @Test
+    public void should_return_false_when_equals_given_two_students_with_different_id() {
+        Student student1 = new Student(1, "Tom", 18);
+        Student student2 = new Student(2, "Tom", 18);
+
+        assertNotEquals(student1, student2);
+    }
 }
