@@ -1,7 +1,7 @@
 package ooss;
 
 public class Student extends Person {
-
+    private Klass klass;
     public Student(int id, String name, int age) {
         super(id, name, age);
     }
@@ -11,6 +11,10 @@ public class Student extends Person {
     }
 
     public boolean isIn(Klass klass) {
-        return false;
+        return klass.equals(this.klass);
+    }
+
+    public void join(Klass klass) {
+        this.klass = klass;
     }
 }
